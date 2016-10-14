@@ -46,8 +46,11 @@ The [distributed operation layer (DOL)](http://www.tik.ee.ethz.ch/~shapes/dol.ht
 - 新建一个临时文件夹objdir：`<$ mkdir objdir>`
 - 进入该文件夹objdir：`<$ cd objdir>`
 - 运行configure(能根据系统的环境设置一下参数，用于编译)：`<$ ../configure CXX=g++ --disable-async-updates>`
+- 成功时的显示如图：![picture1](http://i1.piimg.com/4851/b67d2955050c7025.png)
 - 进行编译：`<$ sudo make install>`
+- 成功时显示如图：![picture2](http://i1.piimg.com/4851/b0c28a21c4af7bc0.png)
 - 编译结束后，需要返回到systemc-2.3.1的目录下，并记录当前的工作目录，需要记录下来，在后面会用到：`<$ cd ..> <$ pwd>`
+- 成功时显示如图：![picture3](http://i1.piimg.com/4851/66cb01ce1a2fc65b.png)
 
 至此，systemc的编译就完成了。
 
@@ -58,12 +61,14 @@ The [distributed operation layer (DOL)](http://www.tik.ee.ethz.ch/~shapes/dol.ht
 <property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>>`
 把YYY改成上页pwd的结果（注意，对于64位系统的机器，lib-linux要改成lib-linux64）
 - 编译`<$ ant -f build_zip.xml all>`，若是成功，会显示build successful.
+- 成功时显示如图：![picture4](http://i1.piimg.com/4851/2751ae8db2071d40.png)
 
 至此，DOL的配置就结束了，但是我们还不知道这个配置到底有没有成功，如果配置这么久再不成功，那就悲剧了=。=，这里我们只需要小小的测试一下就可以知道是否成功.
  
 ### 测试是否配置成功 ###
 - 进入build/bin/mian路径下：`<$ cd build/bin/main>`
 - 运行第一个例子：`<$ ant -f runexample.xml -Dnumber=1>`
+- 成功时如图所示：![picture5](http://i1.piimg.com/4851/42334159c8418b45.png)
 
 如果最后显示"BUILD SUCCESSFUL"和"Total time:XXX seconds"。祝贺你，配置成功了~
 
