@@ -50,9 +50,13 @@
         roslaunch cartographer_ros demo_backpack_2d.launch bag_filename:=${HOME}/Downloads/cartographer_paper_deutsches_museum.bag
 执行指令后如果没有错误提示，就可以看到下面的正确图示。
 - 正确测试结果图示：
+  - 整体缩小图：
+  ![picture1](http://p1.bqimg.com/567571/0a6cde9ad01e97e3.png)
   - 包含相关数据图：
   ![picture2](http://p1.bqimg.com/567571/912b84fdd15b2c2d.png)
-    
+  - 整体放大图：
+  ![picyure3](http://p1.bqimg.com/567571/d46dd274f17cd41b.png)  
+
 至此，安装和测试就完成了。
 ##错误总结##
 在进行安装cartographer时没有新建文件夹，直接放在了src下面，在进行测试的时候会报错，建议新建一个文件夹存放安装需要的一大堆文件。  
