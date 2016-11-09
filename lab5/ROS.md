@@ -48,7 +48,7 @@
                     
         roscore
   - 出现以下界面：  
-  ![picture](http://7xrn7f.com1.z0.glb.clouddn.com/16-11-7/3178119.jpg)
+  ![picture](https://github.com/guiguiw/ES2016_14353394/blob/master/1.png)
   
 - 打开第二个终端，输入以下指令，开启一个小乌龟界面：  
 
