@@ -19,7 +19,7 @@
         cd ceres-solver-1.11.0/build  
 - 在该目录下依次执行以下指令：  
 
-        cmake..
+        cmake ..
         make
         sudo make install
 - 接着安装cartographer,在catkin_ws下新建文件夹，我的命名为cat，随后在终端进入该目录下，执行以下指令：  
@@ -30,7 +30,7 @@
         cd cartographer/build
 - 进入后，依次执行以下指令：  
 
-        cmake..
+        cmake ..
         make 
         sudo make install
 - 安装cartographer——ros，进入catkin_ws的src目录下，执行以下指令：  
